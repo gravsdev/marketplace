@@ -1,0 +1,151 @@
+#root-carousel {
+  border-radius: 8px;
+  border: 0.5px solid var(--color-zinc-700);
+  overflow: hidden;
+}
+
+#root-carousel > .carousel--wrapper {
+  background: var(--color-zinc-900);
+
+  display: flex;
+  height: clamp(200px, 30vw, 350px);
+  align-items: center;
+  gap: 24px;
+  position: relative;
+}
+
+#root-carousel .carousel--wrapper > .carousel-slider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 16px 12%;
+}
+
+#root-carousel .carousel--wrapper > .carousel-slider .slider {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.15, 0.3, 0.25, 1) 0s;
+}
+
+#root-carousel .carousel--wrapper > .slider-button {
+  background-color: rgba(20, 184, 166, 0.8);
+  color: var(--color-white);
+
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translate(0px, -50%);
+  display: flex;
+  width: 80px;
+  height: 80px;
+  padding: 0px 14px;
+  align-items: center;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+#root-carousel .carousel--wrapper > .slider-button .icon {
+  width: 18px;
+  height: 18px;
+  transition: all 0.2s;
+}
+#root-carousel .carousel--wrapper > .slider-button:hover .icon {
+  width: 20px;
+  height: 20px;
+  stroke: var(--color-white);
+}
+
+#root-carousel .carousel--wrapper > .slider-button.previous {
+  left: -40px;
+  justify-content: end;
+}
+
+#root-carousel > .carousel--content {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#root-carousel .carousel--content > .title {
+  color: var(--color-white);
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#root-carousel .carousel--content > .text {
+  color: var(--color-slate-400);
+
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* BEGIN: Tarjeta simple */
+#root-simple-card {
+  display: flex;
+  width: 100%;
+  height: clamp(200px, 40%, 400px);
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  position: relative;
+  transition: transform 0.3s ease;
+
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+}
+
+#root-simple-card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+#root-simple-card > .layer {
+  background-color: var(--color-slate-900);
+
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 8px;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#root-simple-card:hover > .layer {
+  opacity: 0.5;
+}
+/* END: Tarjeta simple */
+
+/**
+  * ADAPTACIÓN DE PANTALLA
+**/
+@media not all and (min-width: 600px) {
+}
+
+@media not all and (min-width: 900px) {
+  #root-carousel > .carousel--wrapper {
+    height: clamp(200px, 60vw, 500px);
+  }
+}

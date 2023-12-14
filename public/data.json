@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "title": "Plantilla 1",
+    "description": "Lo obtenemos — tienes una publicación de blog que te mueres por escribir, pero puedes escribirlo hasta que reconstruyas tu sitio personal. Te tenemos cubierto, vuelve a escribir.",
+    "image": {
+      "name": "plantilla-1",
+      "path": "https://mui.com/static/branding/store-templates/template-2light.jpg"
+    },
+    "category": "Plantillas"
+  },
+  {
+    "id": "2",
+    "title": "Plantilla 2",
+    "description": "esta es una descripcion de la plantilla numero 2.",
+    "image": {
+      "name": "plantilla-2",
+      "path": "https://mui.com/static/branding/store-templates/template-2light.jpg"
+    },
+    "category": "Plantillas"
+  },
+  {
+    "id": "3",
+    "title": "Plantilla 3",
+    "description": "esta es una descripcion de la plantilla numero 3.",
+    "image": {
+      "name": "plantilla-3",
+      "path": "https://mui.com/static/branding/store-templates/template-2light.jpg"
+    },
+    "category": "Plantillas"
+  },
+  {
+    "id": "4",
+    "title": "Plantilla 4",
+    "description": "esta es una descripcion de la plantilla numero 4.",
+    "image": {
+      "name": "plantilla-4",
+      "path": "https://mui.com/static/branding/store-templates/template-2light.jpg"
+    },
+    "category": "Plantillas"
+  },
+  {
+    "id": "5",
+    "title": "Plantilla 5",
+    "description": "esta es una descripcion de la plantilla numero 5.",
+    "image": {
+      "name": "plantilla-5",
+      "path": "https://mui.com/static/branding/store-templates/template-2light.jpg"
+    },
+    "category": "Plantillas"
+  }
+]

@@ -1,0 +1,133 @@
+#root-ui-item {
+  background-color: var(--color-zinc-800);
+
+  display: flex;
+  flex-direction: column;
+}
+
+#root-ui-item section.first {
+  display: flex;
+  justify-content: center;
+}
+
+#root-ui-item section.first > .section__container {
+  display: flex;
+  width: 1200px;
+  padding: 128px 24px;
+  gap: 32px;
+
+  /* border: var(--by); */
+}
+
+#root-ui-item section.first .section--content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+
+  /* border: var(--br); */
+}
+
+#root-ui-item section.first .section--content > .head {
+  color: var(--color-teal-400);
+
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#root-ui-item section.first .section--content > .title {
+  color: var(--color-white);
+
+  font-family: var(--font-inter);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#root-ui-item section.first .section--content > .text {
+  color: var(--color-slate-300);
+
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#root-ui-item section.first .section--content > .options {
+  display: flex;
+  margin-top: 16px;
+  gap: 16px;
+}
+#root-ui-item section.first .section--content > .options .simple-button {
+  background-color: var(--color-teal-500);
+
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--color-zinc-700);
+
+  color: var(--color-white);
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+#root-ui-item
+  section.first
+  .section--content
+  > .options
+  .simple-button.outline {
+  background-color: transparent;
+}
+
+#root-ui-item section.first .section--banner {
+  width: 100%;
+  height: clamp(200px, 50vw, 340px);
+  border-radius: 8px;
+  border: 0.5px solid var(--color-zinc-700);
+  overflow: hidden;
+}
+
+#root-ui-item section.first .section--banner > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/**
+  * ADAPTACIÓN DE PANTALLA
+**/
+@media not all and (min-width: 600px) {
+  #root-ui-item section.first > .section__container {
+    padding: 128px 16px;
+  }
+
+  #root-ui-item section.first .section--content > .options {
+    flex-direction: column;
+  }
+
+  #root-ui-item section.first .section--content > .options .simple-button {
+    width: 100%;
+    padding: 8px 0px;
+  }
+}
+
+@media not all and (min-width: 900px) {
+  #root-ui-item section.first > .section__container {
+    flex-direction: column;
+  }
+
+  #root-ui-item section.first .section--banner {
+    height: clamp(200px, 50vw, 400px);
+  }
+}

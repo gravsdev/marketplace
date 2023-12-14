@@ -1,0 +1,230 @@
+#root-header {
+  background-color: rgba(39, 39, 42, 0.9);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 60px;
+  position: fixed;
+  z-index: 50;
+}
+
+.header__container {
+  display: flex;
+  height: fit-content;
+  width: 1200px;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 24px;
+  position: relative;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__menu > .logo {
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+}
+
+.header__menu > .link {
+  color: var(--color-white);
+
+  opacity: 0.8;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.header__menu > .link:hover {
+  opacity: 1;
+}
+
+.header__menu > .simple-button {
+  background-color: var(--color-teal-500);
+  color: var(--color-white);
+
+  padding: 8px 16px;
+  border-radius: 8px;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.header__menu > .simple-button:hover {
+  background-color: var(--color-teal-400);
+}
+
+.header__menu > .hamburger-menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+.header__seeker {
+  background-color: var(--color-white);
+  display: flex;
+  width: 350px;
+  height: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.header__seeker > input {
+  background-color: transparent;
+  color: var(--color-slate-900);
+
+  width: 100%;
+  height: 100%;
+  padding-left: 16px;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header__seeker > input::placeholder {
+  color: var(--color-slate-500);
+}
+
+.header__seeker > button {
+  background-color: transparent;
+  color: var(--color-slate-500);
+
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 8px;
+  cursor: pointer;
+}
+
+.header__seeker > button .icon {
+  width: 18px;
+  height: 18px;
+}
+
+#root-sidebar {
+  background-color: rgba(39, 39, 42, 0.9);
+
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  top: 46px;
+  right: 0;
+  transition: 500ms;
+}
+#root-sidebar.sidebar-hidden {
+  right: -100%;
+}
+
+.sidebar__header {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  padding: 0px 16px;
+  gap: 8px;
+}
+
+.sidebar__header > .simple-button {
+  background-color: var(--color-teal-400);
+  color: var(--color-white);
+
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.sidebar__header > .simple-button:hover {
+  background-color: var(--color-teal-500);
+}
+
+.sidebar__header > .simple-button.outline {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px var(--color-teal-400);
+}
+.sidebar__header > .simple-button.outline:hover {
+  background-color: var(--color-teal-500);
+  box-shadow: none;
+}
+
+.sidebar__menu {
+  background-color: var(--color-white);
+
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0px;
+}
+
+.sidebar__menu > .link-button .icon {
+  height: 18px;
+  width: 18px;
+}
+
+.sidebar__menu > .link-button {
+  color: var(--color-slate-900);
+
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.sidebar__menu > .link-button:hover,
+.sidebar__menu > .link-button.active {
+  background-color: var(--color-teal-100);
+  color: var(--color-teal-400);
+}
+
+/**
+  * ADAPTACIÓN DE PANTALLA
+**/
+@media not all and (min-width: 600px) {
+  .header__container {
+    gap: 16px;
+    padding: 0px 16px;
+  }
+
+  .header__seeker {
+    width: 100%;
+  }
+
+  #root-sidebar {
+    width: 100%;
+  }
+}
+
+@media not all and (min-width: 900px) {
+  .header__menu > .link,
+  .header__menu > .simple-button {
+    display: none;
+  }
+
+  .header__menu > .hamburger-menu {
+    display: block;
+  }
+}

@@ -1,0 +1,77 @@
+:root {
+  --bw: 1px solid white;
+  --br: 1px solid red;
+  --by: 1px solid yellow;
+  --bb: 1px solid blue;
+  --bc: 1px solid cyan;
+
+  /* COLORES */
+  --color-white: #f8fafc;
+  --color-danger: #ef4444;
+  --color-warning: #eab308;
+  --color-success: #22c55e;
+
+  --color-teal-100: #ccfbf1;
+  --color-teal-200: #99f6e4;
+  --color-teal-300: #5eead4;
+  --color-teal-400: #2dd4bf;
+  --color-teal-500: #14b8a6;
+  --color-teal-600: #0d9488;
+
+  --color-indigo-400: #818cf8;
+  --color-indigo-500: #6366f1;
+
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-400: #a1a1aa;
+  --color-zinc-500: #71717a;
+  --color-zinc-600: #52525b;
+  --color-zinc-700: #3f3f46;
+  --color-zinc-800: #27272a;
+  --color-zinc-900: #18181b;
+
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+
+  /* FUENTES */
+  --font-inter: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-roboto: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  /* font-family: var(--font-inter); */
+  /* line-height: 1.5; */
+  /* font-weight: 400; */
+
+  /* color-scheme: light dark; */
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #18181b;
+
+  /* font-synthesis: none; */
+  /* text-rendering: optimizeLegibility; */
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
+}
+
+.hidden {
+  display: none;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
